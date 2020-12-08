@@ -22,18 +22,29 @@
 ***URL***: ```url : s3://mywineproject/```
 
 2) **Creating an EMR cluster**
+
 2.1. Login to AWS console and create a IAM role for ec2 instance to give access to s3 so that ec2 instace can have access to download (CSV files) and upload files (Model file) to s3.
+
 2.2. Alternatively, you can also set your s3 bucket to public to give access to your files, **Note: This is generally not recommended as it has high security risks. If you are using an AWS Educate account you cannot modify your IAM policy and in such a scenario you can utilize this step**
 
 3) **Creating a Cluster**
+
 *Step 1:* In the AWS dashboard under the `analytics` section click `EMR`
+
 *Step 2:* Now Click `Create Cluster` 
+
 *Step 3:* In the `General Configuration` for `Cluster Name` type desired cluster name.
+
           Under `Software configuration` in the application column click the button which shows `Spark: Spark 2.4.7 on Hadoop 2.10.1 YARN and Zeppelin 0.8.2`
-          Under `Hardware Configuration` click `m4.large` rather than the default `m5.xlarge` as the default m5.xlarge incurs a cost of $0.043/hr in contrast to the $0.03 for m4.large. Keep in mind that EMR incurs an additional 25% cost post first usage. 
+	  
+          Under `Hardware Configuration` click `m4.large` rather than the default `m5.xlarge` as the default m5.xlarge incurs a cost of $0.043/hr in contrast to the $0.03 for 	           m4.large. Keep in mind that EMR incurs an additional 25% cost post first usage. 
+	  
           Select `4` instances under the column `Number of instances`
+	  
           Under `Security and access` click the EC2 key pair already created else create a new one
+	  
 *Step 4:* Click Create Cluster button. Wait for around 15 minutes for the cluster to start functioning. 
+
 *Alternative Step*: If you want to create the above procedure using command line you can use this 
 
 ```
