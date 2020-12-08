@@ -34,14 +34,10 @@
 *Step 2:* Now Click `Create Cluster` 
 
 *Step 3:* In the `General Configuration` for `Cluster Name` type desired cluster name.
-
-          Under `Software configuration` in the application column click the button which shows `Spark: Spark 2.4.7 on Hadoop 2.10.1 YARN and Zeppelin 0.8.2`
-	  
-          Under `Hardware Configuration` click `m4.large` rather than the default `m5.xlarge` as the default m5.xlarge incurs a cost of $0.043/hr in contrast to the $0.03 for 	           m4.large. Keep in mind that EMR incurs an additional 25% cost post first usage. 
-	  
-          Select `4` instances under the column `Number of instances`
-	  
-          Under `Security and access` click the EC2 key pair already created else create a new one
+	  Under `Software configuration` in the application column click the button which shows `Spark: Spark 2.4.7 on Hadoop 2.10.1 YARN and Zeppelin 0.8.2`
+	  Under `Hardware Configuration` click `m4.large` rather than the default `m5.xlarge` as the default m5.xlarge incurs a cost of $0.043/hr in contrast to the $0.03 for 	           m4.large. Keep in mind that EMR incurs an additional 25% cost post first usage. 
+	  Select `4` instances under the column `Number of instances`
+	  Under `Security and access` click the EC2 key pair already created else create a new one
 	  
 *Step 4:* Click Create Cluster button. Wait for around 15 minutes for the cluster to start functioning. 
 
