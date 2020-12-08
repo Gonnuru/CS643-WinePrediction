@@ -12,7 +12,7 @@
 --- 
 ## Table of Contents
 
-- [EMR Installation](#installation)
+- [EMR Installation](#EMR-Installation)
 - [EC2 Instance without Docker](#EC2-Instance-without-Docker)
 - [EC2 Instance With Docker](#EC2-Instance-With-Docker)
 - [TroubleShooting](#Troubleshooting)
